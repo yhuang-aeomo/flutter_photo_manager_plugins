@@ -2,6 +2,7 @@ name: photo_manager_image_provider
 description: A Flutter plugin, provide image_provider for photo_manager's AssetEntity.
 version: 2.1.1
 homepage: https://github.com/fluttercandies/flutter_photo_manager_plugins/tree/main/packages/photo_manager_image_provider
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
   sdk: ">=2.13.0 <4.0.0"
@@ -10,7 +11,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  photo_manager: ">=2.6.0 <4.0.0"
+  photo_manager: 
+    git:
+      url: https://github.com/yhuang-aeomo/flutter_photo_manager.git
+      ref: 6f78b23475d595644a6dd4929ce26438711f5cb5
 
 dev_dependencies:
   flutter_test:
